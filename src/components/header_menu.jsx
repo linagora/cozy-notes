@@ -57,7 +57,11 @@ const HeaderMenu = ({
             )}
           </AppLinker>
 
-          <Divider orientation="vertical" className="u-ml-1" flexItem />
+          <Divider
+            orientation="vertical"
+            className={`u-ml-1 u-mt-half u-mb-half ${isPublic ? 'u-mr-1' : ''}`}
+            flexItem
+          />
         </WithBreakpoints>
 
         {leftComponent}
@@ -71,7 +75,7 @@ const HeaderMenu = ({
             />
           </WithBreakpoints>
 
-          <div>
+          <div className={`${isPublic ? 'u-ml-1' : ''}`}>
             <Typography>
               <strong>{filename}</strong>
             </Typography>
