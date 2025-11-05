@@ -35,12 +35,12 @@ import IconSprite from 'cozy-ui/transpiled/react/Icon/Sprite'
 import { Layout, Main, Content } from 'cozy-ui/transpiled/react/Layout'
 import Spinner from 'cozy-ui/transpiled/react/Spinner'
 import Alerter from 'cozy-ui/transpiled/react/deprecated/Alerter'
-import useClientErrors from 'cozy-ui/transpiled/react/hooks/useClientErrors'
 import AlertProvider from 'cozy-ui/transpiled/react/providers/Alert'
 import useBreakpoints, {
   BreakpointsProvider
 } from 'cozy-ui/transpiled/react/providers/Breakpoints'
 import { useI18n } from 'cozy-ui/transpiled/react/providers/I18n'
+import useClientErrors from 'cozy-ui-plus/dist/hooks/useClientErrors'
 
 const manifest = require('../../manifest.webapp')
 

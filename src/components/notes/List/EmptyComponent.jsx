@@ -5,10 +5,10 @@ import useReferencedFolderForNote from 'hooks/useReferencedFolderForNote'
 import React from 'react'
 
 import { withClient } from 'cozy-client'
-import AppLinker from 'cozy-ui/transpiled/react/AppLinker'
 import Empty from 'cozy-ui/transpiled/react/Empty'
 import NotesIcon from 'cozy-ui/transpiled/react/Icons/Notes'
 import { translate } from 'cozy-ui/transpiled/react/providers/I18n'
+import AppLinker from 'cozy-ui-plus/dist/AppLinker'
 
 const EmptyComponent = ({ t, client }) => {
   const { notesFolder } = useReferencedFolderForNote(client)

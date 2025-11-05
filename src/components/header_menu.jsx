@@ -6,11 +6,11 @@ import React from 'react'
 import { Breakpoints } from 'types/enums'
 
 import { models } from 'cozy-client'
-import AppIcon from 'cozy-ui/transpiled/react/AppIcon'
-import AppLinker from 'cozy-ui/transpiled/react/AppLinker'
 import Divider from 'cozy-ui/transpiled/react/Divider'
 import Link from 'cozy-ui/transpiled/react/Link'
 import Typography from 'cozy-ui/transpiled/react/Typography'
+import AppIcon from 'cozy-ui-plus/dist/AppIcon'
+import AppLinker from 'cozy-ui-plus/dist/AppLinker'
 
 import { HeaderNotePath } from './HeaderNotePath'
 import styles from './header_menu.styl'

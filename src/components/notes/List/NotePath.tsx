@@ -3,9 +3,9 @@ import { Slugs } from 'constants/strings'
 import { removeFilename } from 'lib/helpers'
 import React from 'react'
 
-import AppLinker from 'cozy-ui/transpiled/react/AppLinker'
 import FilePath from 'cozy-ui/transpiled/react/FilePath'
 import FilePathLink from 'cozy-ui/transpiled/react/FilePathLink'
+import AppLinker from 'cozy-ui-plus/dist/AppLinker'
 
 interface NotePathProps {
   drivePath: string

@@ -6,10 +6,10 @@ import PropTypes from 'prop-types'
 import React, { useContext } from 'react'
 
 import { deconstructCozyWebLinkWithSlug, models, useClient } from 'cozy-client'
-import AppLinker from 'cozy-ui/transpiled/react/AppLinker'
 import Icon from 'cozy-ui/transpiled/react/Icon'
 import IconButton from 'cozy-ui/transpiled/react/IconButton'
 import PreviousIcon from 'cozy-ui/transpiled/react/Icons/Previous'
+import AppLinker from 'cozy-ui-plus/dist/AppLinker'
 
 /**
  * Simple fake event to detect if the handler

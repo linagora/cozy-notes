@@ -71,13 +71,12 @@ const isSingle = (fileList?: FileList): boolean | void =>
 const handleDrop = (
   { dataTransfer }: DragEvent,
   cb: FileCallback
-): boolean | void =>
-  isSingle(dataTransfer?.files) && cb(dataTransfer?.files?.[0])
+): boolean | void => isSingle(dataTransfer?.files) && cb(dataTransfer?.files[0])
 
 const handlePaste = (
   { clipboardData }: ClipboardEvent,
   cb: FileCallback
-): void => cb(clipboardData?.files?.[0])
+): void => cb(clipboardData?.files[0])
 
 const uploadImage = (
   config: ImageUploadProviderConfig,
