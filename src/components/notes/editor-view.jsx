@@ -80,7 +80,11 @@ function EditorView(props) {
       )}
       <style>#coz-bar {'{ display: none }'}</style>
       {headerMenu}
-      <section className="note-editor-container">
+      <section
+        className={`note-editor-container${
+          readOnly ? ' note-editor-container--readonly' : ''
+        }`}
+      >
         <Editor
           {...editorConfig}
           disabled={isDisabled}

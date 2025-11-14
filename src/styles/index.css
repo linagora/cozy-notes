@@ -72,6 +72,11 @@ html .akEditor>div:first-child {
     margin-top: 3rem; /* To go below the toolbar which is fixed */
 }
 
+/* Hide toolbar when editor is in readonly mode */
+.note-editor-container--readonly [data-testid="ak-editor-main-toolbar"] {
+    display: none !important;
+}
+
 /* prose mirror toolbar in the upper bar */
 html .akEditor>div:first-child {
     width: 100%;
