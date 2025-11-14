@@ -65,6 +65,7 @@ function EditorView(props) {
   useEventListener(titleEl.current, 'blur', onTitleBlur)
 
   const [isUploading, setUploading] = useState(false)
+  const isDisabled = readOnly ? true : collabProvider ? false : readOnly
 
   return (
     <article
@@ -82,7 +83,7 @@ function EditorView(props) {
       <section className="note-editor-container">
         <Editor
           {...editorConfig}
-          disabled={collabProvider ? false : readOnly}
+          disabled={isDisabled}
           collabEdit={collabEdit}
           onChange={onContentChange || nullCallback}
           defaultValue={defaultValue}
