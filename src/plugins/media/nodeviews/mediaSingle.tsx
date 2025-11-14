@@ -259,7 +259,8 @@ export default class MediaSingleNode extends Component<
     const MediaChild = <FigureWrapper innerRef={this.forwardInnerRef} />
 
     let canResize = !!this.props.mediaOptions.allowResizing
-
+    // Disable resizing if editor is disabled/readonly
+    canResize = canResize && this.props.view.editable
     if (!this.props.mediaOptions.allowResizingInTables) {
       // If resizing not allowed in tables, check parents for tables
       const pos = getPos()
