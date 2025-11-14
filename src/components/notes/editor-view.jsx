@@ -66,6 +66,31 @@ function EditorView(props) {
 
   const [isUploading, setUploading] = useState(false)
   const isDisabled = readOnly ? true : collabProvider ? false : readOnly
+  const editorContainerRef = useRef(null)
+
+  // Handle link clicks when editor is disabled
+  useEffect(() => {
+    const container = editorContainerRef.current
+    if (!container) return
+    if (!isDisabled) return
+    const handleLinkClick = e => {
+      // Find the closest link element
+      const linkElement = e.target.closest('a[href]')
+      if (linkElement && linkElement.href) {
+        e.preventDefault()
+        e.stopPropagation()
+        // Open link in new tab
+        window.open(linkElement.href, '_blank', 'noopener,noreferrer')
+      }
+    }
+
+    // Use capture phase to intercept clicks before editor handles them
+    container.addEventListener('click', handleLinkClick, true)
+
+    return () => {
+      container.removeEventListener('click', handleLinkClick, true)
+    }
+  }, [isDisabled])
 
   return (
     <article
@@ -84,6 +109,7 @@ function EditorView(props) {
         className={`note-editor-container${
           readOnly ? ' note-editor-container--readonly' : ''
         }`}
+        ref={editorContainerRef}
       >
         <Editor
           {...editorConfig}
