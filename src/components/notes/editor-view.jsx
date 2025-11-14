@@ -144,7 +144,6 @@ function EditorView(props) {
                       readOnly: !!readOnly
                     }}
                     onChange={readOnly ? nullCallback : onTitleEvent}
-                    disabled={isDisabled}
                   />
                   {React.Children.map(children, child =>
                     React.isValidElement(child)
