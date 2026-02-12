@@ -1,8 +1,8 @@
 import React from 'react'
+import { translate } from 'twake-i18n'
 
 import { withBreakpoints } from 'cozy-ui/transpiled/react'
 import Typography from 'cozy-ui/transpiled/react/Typography'
-import { translate } from 'cozy-ui/transpiled/react/providers/I18n'
 
 // We don't display the Title this way in Mobile.
 // We use BarCentrer and BarTitle

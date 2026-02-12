@@ -1,8 +1,8 @@
 import React from 'react'
+import I18n from 'twake-i18n'
 
 import { CozyProvider, createMockClient } from 'cozy-client'
 import { BreakpointsProvider } from 'cozy-ui/transpiled/react/providers/Breakpoints'
-import { I18n } from 'cozy-ui/transpiled/react/providers/I18n'
 
 import en from '../src/locales/en.json'
 

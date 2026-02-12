@@ -3,11 +3,11 @@ import { Slugs } from 'constants/strings'
 import Add from 'components/notes/add'
 import useReferencedFolderForNote from 'hooks/useReferencedFolderForNote'
 import React from 'react'
+import { translate } from 'twake-i18n'
 
 import { withClient } from 'cozy-client'
 import Empty from 'cozy-ui/transpiled/react/Empty'
 import NotesIcon from 'cozy-ui/transpiled/react/Icons/Notes'
-import { translate } from 'cozy-ui/transpiled/react/providers/I18n'
 import AppLinker from 'cozy-ui-plus/dist/AppLinker'
 
 const EmptyComponent = ({ t, client }) => {

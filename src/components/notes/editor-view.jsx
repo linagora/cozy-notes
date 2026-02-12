@@ -3,12 +3,12 @@ import styles from 'components/notes/editor-view.styl'
 import editorConfig from 'components/notes/editor_config'
 import { imageUploadProvider } from 'lib/image-upload-provider'
 import React, { useCallback, useRef, useEffect, useMemo, useState } from 'react'
+import { useI18n } from 'twake-i18n'
 
 import Spinner from 'cozy-ui/transpiled/react/Spinner'
 import TextField from 'cozy-ui/transpiled/react/TextField'
 import Overlay from 'cozy-ui/transpiled/react/deprecated/Overlay'
 import useEventListener from 'cozy-ui/transpiled/react/hooks/useEventListener'
-import { useI18n } from 'cozy-ui/transpiled/react/providers/I18n'
 
 function updateTextareaHeight(target) {
   if (target) target.style.height = `${target.scrollHeight}px`

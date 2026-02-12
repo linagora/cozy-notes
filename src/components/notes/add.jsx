@@ -1,11 +1,11 @@
 import { createNoteDocument, generateReturnUrlToNotesIndex } from 'lib/utils'
 import React, { useState, useCallback } from 'react'
+import { useI18n } from 'twake-i18n'
 
 import { useClient } from 'cozy-client'
 import BarButton from 'cozy-ui/transpiled/react/BarButton'
 import Button from 'cozy-ui/transpiled/react/Buttons'
 import Icon from 'cozy-ui/transpiled/react/Icon'
-import { useI18n } from 'cozy-ui/transpiled/react/providers/I18n'
 
 export default function Add({ className }) {
   const { t } = useI18n()

@@ -18,12 +18,6 @@ expect.addSnapshotSerializer({
   }
 })
 
-jest.mock('cozy-ui/transpiled/react/I18n', () => ({
-  createUseI18n: () => ({ t: x => x }),
-  translate: () => () => ({ t: x => x }),
-  useI18n: () => ({ t: x => x })
-}))
-
 jest.mock('prosemirror-collab', () => {
   return { getVersion: jest.fn(), sendableSteps: jest.fn() }
 })
