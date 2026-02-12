@@ -3,12 +3,12 @@ import styles from 'components/notes/saving-indicator.styl'
 import useCollabStateChange from 'hooks/useCollabStateChange'
 import { relativeAge } from 'lib/utils'
 import React, { useMemo } from 'react'
+import { useI18n } from 'twake-i18n'
 
 import Typography from 'cozy-ui/transpiled/react/Typography'
 import useBrowserOffline from 'cozy-ui/transpiled/react/hooks/useBrowserOffline'
 import usePeriodicRender from 'cozy-ui/transpiled/react/hooks/usePeriodicRender'
 import useBreakpoints from 'cozy-ui/transpiled/react/providers/Breakpoints'
-import { useI18n } from 'cozy-ui/transpiled/react/providers/I18n'
 
 // constants
 const sec = 1000

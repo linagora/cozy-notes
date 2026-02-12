@@ -34,7 +34,7 @@ import { RealtimePlugin } from 'cozy-realtime'
 import SharingProvider, { NativeFileSharingProvider } from 'cozy-sharing'
 import 'cozy-sharing/dist/stylesheet.css'
 import CozyTheme from 'cozy-ui/transpiled/react/providers/CozyTheme'
-import I18n from 'cozy-ui/transpiled/react/providers/I18n'
+import I18n from 'twake-i18n'
 import {
   StylesProvider,
   createGenerateClassName

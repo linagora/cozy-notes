@@ -2,6 +2,7 @@ import EmptyComponent from 'components/notes/List/EmptyComponent'
 import NoteRow from 'components/notes/List/NoteRow'
 import styles from 'components/notes/List/list.styl'
 import React from 'react'
+import { translate } from 'twake-i18n'
 import { Breakpoints } from 'types/enums'
 
 import Spinner from 'cozy-ui/transpiled/react/Spinner'
@@ -13,7 +14,6 @@ import {
   TableHeader,
   TableCell
 } from 'cozy-ui/transpiled/react/deprecated/Table'
-import { translate } from 'cozy-ui/transpiled/react/providers/I18n'
 
 import { WithBreakpoints } from './WithBreakpoints'
 

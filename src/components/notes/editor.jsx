@@ -20,12 +20,12 @@ import PropTypes from 'prop-types'
 import React, { useEffect, useContext, useCallback, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useWindowEventListener } from 'rooks/dist/esm/hooks/useWindowEventListener'
+import { useI18n } from 'twake-i18n'
 
 import { RealTimeQueries, useClient, useQuery } from 'cozy-client'
 import { SharingBannerPlugin } from 'cozy-sharing'
 import { useSharingInfos } from 'cozy-sharing'
 import useConfirmExit from 'cozy-ui/transpiled/react/hooks/useConfirmExit'
-import { useI18n } from 'cozy-ui/transpiled/react/providers/I18n'
 
 import { SHARING_LOCATION } from '../../constants/strings'
 

@@ -18,6 +18,7 @@ import {
   useNavigate,
   useParams
 } from 'react-router-dom'
+import { useI18n } from 'twake-i18n'
 
 import { BarRoutes } from 'cozy-bar'
 import { BarProvider, BarComponent, BarCenter } from 'cozy-bar'
@@ -39,7 +40,6 @@ import AlertProvider from 'cozy-ui/transpiled/react/providers/Alert'
 import useBreakpoints, {
   BreakpointsProvider
 } from 'cozy-ui/transpiled/react/providers/Breakpoints'
-import { useI18n } from 'cozy-ui/transpiled/react/providers/I18n'
 import useClientErrors from 'cozy-ui-plus/dist/hooks/useClientErrors'
 
 const manifest = require('../../manifest.webapp')

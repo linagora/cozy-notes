@@ -1,8 +1,7 @@
 import SaveButton from 'components/intents/SaveButton'
 import EditorView from 'components/notes/editor-view'
 import React, { useState } from 'react'
-
-import { useI18n } from 'cozy-ui/transpiled/react/providers/I18n'
+import { useI18n } from 'twake-i18n'
 
 const IntentEditorView = () => {
   const { t } = useI18n()

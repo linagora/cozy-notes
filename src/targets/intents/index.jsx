@@ -21,7 +21,7 @@ import { WebviewIntentProvider } from 'cozy-intent'
 import Intents from 'cozy-interapp'
 import { BreakpointsProvider } from 'cozy-ui/transpiled/react/providers/Breakpoints'
 import CozyTheme from 'cozy-ui/transpiled/react/providers/CozyTheme'
-import I18n from 'cozy-ui/transpiled/react/providers/I18n'
+import I18n from 'twake-i18n'
 import {
   StylesProvider,
   createGenerateClassName

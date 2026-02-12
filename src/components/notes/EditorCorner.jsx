@@ -5,6 +5,7 @@ import SharingWidget from 'components/notes/sharing'
 import { usePreview } from 'hooks/usePreview'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { useI18n } from 'twake-i18n'
 
 import {
   useSharingInfos,
@@ -16,7 +17,6 @@ import { makeActions } from 'cozy-ui/transpiled/react/ActionsMenu/Actions'
 import Icon from 'cozy-ui/transpiled/react/Icon'
 import Tooltip from 'cozy-ui/transpiled/react/Tooltip'
 import useBreakpoints from 'cozy-ui/transpiled/react/providers/Breakpoints'
-import { useI18n } from 'cozy-ui/transpiled/react/providers/I18n'
 
 // https://mui.com/components/tooltips/#custom-child-element
 const ForwardedIcon = React.forwardRef(function ForwardedIcon(props, ref) {
