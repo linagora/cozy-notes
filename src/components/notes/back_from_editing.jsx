@@ -68,7 +68,7 @@ export default function BackFromEditing({ returnUrl, file, requestToLeave }) {
   const isPublic = useContext(IsPublicContext)
   const client = useClient()
 
-  if (isPublic) {
+  if (isPublic && !returnUrl) {
     return null
   }
 

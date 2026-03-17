@@ -6,6 +6,15 @@ function useReturnUrl({ returnUrl, cozyClient, doc }) {
   const isPublic = useContext(IsPublicContext)
 
   return useMemo(() => {
+    // If we are in public, we do not want any default value for returnUrl
+    if (isPublic) {
+      if (returnUrl) {
+        return returnUrl
+      } else {
+        return undefined
+      }
+    }
+
     if (returnUrl) {
       return returnUrl
     } else if (doc) {
