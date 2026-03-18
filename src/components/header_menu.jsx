@@ -24,6 +24,7 @@ import { WithBreakpoints } from './notes/List/WithBreakpoints'
  * @param {ReactNode} props.leftComponent - The left component.
  * @param {ReactNode} props.rightComponent - The right component.
  * @param {boolean} props.isPublic - Indicates if the component is public.
+ * @param {boolean} props.hasBackButton - Indicates if the component has a back button.
  * @param {import('cozy-client/types').IOCozyFile} props.file - The file associated with the editor.
  * @param {ReactNode} props.bannerComponent - The banner component.
  */
@@ -32,6 +33,7 @@ const HeaderMenu = ({
   leftComponent,
   rightComponent,
   isPublic,
+  hasBackButton,
   file,
   bannerComponent
 }) => {
@@ -40,7 +42,11 @@ const HeaderMenu = ({
 
   return (
     <header className={styles['header']}>
-      <div className={styles['header-menu']}>
+      <div
+        className={`${styles['header-menu']} ${
+          isPublic ? styles['public-view'] : ''
+        }`}
+      >
         <WithBreakpoints hideOn={Breakpoints.Mobile}>
           <AppLinker app={{ slug: Slugs.Home }} href={homeHref}>
             {({ href }) => (
@@ -59,7 +65,9 @@ const HeaderMenu = ({
 
           <Divider
             orientation="vertical"
-            className={`u-ml-1 u-mt-half u-mb-half ${isPublic ? 'u-mr-1' : ''}`}
+            className={`u-ml-1 u-mt-half u-mb-half ${
+              hasBackButton ? '' : 'u-mr-1'
+            }`}
             flexItem
           />
         </WithBreakpoints>
@@ -75,7 +83,7 @@ const HeaderMenu = ({
             />
           </WithBreakpoints>
 
-          <div className={`${isPublic ? 'u-ml-1' : ''}`}>
+          <div>
             <Typography>
               <strong>{filename}</strong>
             </Typography>

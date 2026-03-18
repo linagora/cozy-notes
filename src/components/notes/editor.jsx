@@ -153,6 +153,7 @@ export default function Editor(props) {
                 collabProvider.serviceClient.cozyClient.getStackClient().uri
               }
               isPublic={isPublic}
+              hasBackButton={!isPublic || (isPublic && returnUrl)}
               file={file}
             />
           }
