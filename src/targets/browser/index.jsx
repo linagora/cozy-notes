@@ -2,7 +2,6 @@
 import 'cozy-ui/dist/cozy-ui.utils.min.css'
 import 'cozy-ui/transpiled/react/stylesheet.css'
 import 'cozy-ui-plus/dist/stylesheet.css'
-import 'cozy-search/dist/stylesheet.css'
 
 import { fr, en, ru, vi } from '@atlaskit/editor-core/i18n'
 import { CaptureConsole } from '@sentry/integrations'

@@ -12,6 +12,7 @@ const extraConfig = {
   resolve: {
     modules: ['node_modules', SRC_DIR],
     alias: {
+      'cozy-search': path.resolve(__dirname, './src/stubs/cozy-search'),
       'prosemirror-state': path.resolve(
         // The app will not work with the editor-core pm-state version
         // That's why we're using the global one here until editor-core is updated
