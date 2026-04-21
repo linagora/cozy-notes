@@ -3,9 +3,9 @@ import React, { useState, useCallback } from 'react'
 import { useI18n } from 'twake-i18n'
 
 import { useClient } from 'cozy-client'
-import BarButton from 'cozy-ui/transpiled/react/BarButton'
 import Button from 'cozy-ui/transpiled/react/Buttons'
 import Icon from 'cozy-ui/transpiled/react/Icon'
+import IconButton from 'cozy-ui/transpiled/react/IconButton'
 
 export default function Add({ className }) {
   const { t } = useI18n()
@@ -32,13 +32,14 @@ export default function Add({ className }) {
 export function AddMobile(props) {
   const client = useClient() || props.client
   return (
-    <BarButton
+    <IconButton
+      className="u-c-pointer"
       onClick={async () => {
         const { data: doc } = await createNoteDocument(client)
         window.location.href = await generateReturnUrlToNotesIndex(client, doc)
       }}
-      icon="plus"
-      className="u-c-pointer"
-    />
+    >
+      <Icon icon="plus" />
+    </IconButton>
   )
 }
