@@ -6,7 +6,7 @@ exports[`EditorView readOnly when false without a collabProvider should not disa
     class="note-article"
   >
     <style>
-      #coz-bar 
+      #cozy-bar 
       { display: none }
     </style>
     <section
