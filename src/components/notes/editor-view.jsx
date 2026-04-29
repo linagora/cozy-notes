@@ -103,7 +103,7 @@ function EditorView(props) {
           <Spinner size="xxlarge" middle />
         </Overlay>
       )}
-      <style>#coz-bar {'{ display: none }'}</style>
+      <style>#cozy-bar {'{ display: none }'}</style>
       {headerMenu}
       <section
         className={`note-editor-container${
