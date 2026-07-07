@@ -1,6 +1,7 @@
 import { AppRoutes } from 'constants/routes'
 import { SHARING_LOCATION } from 'constants/strings'
 
+import { Sprite, Notes } from '@linagora/twake-icons'
 import * as Sentry from '@sentry/react'
 import NotesText from 'components/NotesText'
 import { List, Editor, Unshared } from 'components/notes'
@@ -33,8 +34,6 @@ import {
   OpenSharingLinkFabButton
 } from 'cozy-sharing'
 import BarTitle from 'cozy-ui/transpiled/react/BarTitle'
-import IconSprite from 'cozy-ui/transpiled/react/Icon/Sprite'
-import NotesIcon from 'cozy-ui/transpiled/react/Icons/Notes'
 import { Layout, Main, Content } from 'cozy-ui/transpiled/react/Layout'
 import Spinner from 'cozy-ui/transpiled/react/Spinner'
 import Alerter from 'cozy-ui/transpiled/react/deprecated/Alerter'
@@ -170,7 +169,7 @@ const App = ({ isPublic }) => {
         <Layout monoColumn={true}>
           <BarComponent
             isPublic={isPublic}
-            appIcon={NotesIcon}
+            appIcon={Notes}
             appTextIcon={NotesText}
             searchOptions={{ enabled: false }}
           />
@@ -188,7 +187,7 @@ const App = ({ isPublic }) => {
               <RealTimeQueries doctype="io.cozy.settings" />
             </Content>
           </Main>
-          <IconSprite />
+          <Sprite />
           <Alerter t={t} />
           {flag('debug') && <CozyDevTools />}
         </Layout>

@@ -1,5 +1,6 @@
 import { Slugs } from 'constants/strings'
 
+import { Notes } from '@linagora/twake-icons'
 import Add from 'components/notes/add'
 import useReferencedFolderForNote from 'hooks/useReferencedFolderForNote'
 import React from 'react'
@@ -7,7 +8,6 @@ import { translate } from 'twake-i18n'
 
 import { withClient } from 'cozy-client'
 import Empty from 'cozy-ui/transpiled/react/Empty'
-import NotesIcon from 'cozy-ui/transpiled/react/Icons/Notes'
 import AppLinker from 'cozy-ui-plus/dist/AppLinker'
 
 const EmptyComponent = ({ t, client }) => {
@@ -16,7 +16,7 @@ const EmptyComponent = ({ t, client }) => {
     <div className="empty">
       <Empty
         id="empty"
-        icon={NotesIcon}
+        icon={Notes}
         title={t('Notes.Empty.welcome')}
         text={
           <AppLinker href={notesFolder} app={{ slug: Slugs.Drive }}>

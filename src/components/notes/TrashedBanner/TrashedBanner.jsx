@@ -1,3 +1,4 @@
+import { Icon, TrashDuotone } from '@linagora/twake-icons'
 import { DestroyConfirm } from 'components/notes/TrashedBanner/DestroyConfirm'
 import React, { useState } from 'react'
 import { useI18n } from 'twake-i18n'
@@ -5,8 +6,6 @@ import { useI18n } from 'twake-i18n'
 import { useClient } from 'cozy-client'
 import Alert from 'cozy-ui/transpiled/react/Alert'
 import Buttons from 'cozy-ui/transpiled/react/Buttons'
-import Icon from 'cozy-ui/transpiled/react/Icon'
-import TrashDuotoneIcon from 'cozy-ui/transpiled/react/Icons/TrashDuotone'
 import { useAlert } from 'cozy-ui/transpiled/react/providers/Alert'
 import useBreakpoints from 'cozy-ui/transpiled/react/providers/Breakpoints'
 
@@ -51,7 +50,7 @@ const TrashedBanner = ({ noteId, isPublic, returnUrl }) => {
       <Alert
         square
         severity="secondary"
-        icon={<Icon icon={TrashDuotoneIcon} size={32} />}
+        icon={<Icon icon={TrashDuotone} size={32} />}
         block={isMobile}
         action={
           !isPublic ? (

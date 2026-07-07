@@ -1,14 +1,13 @@
 import { Slugs } from 'constants/strings'
 
+import { Icon, Previous } from '@linagora/twake-icons'
 import IsPublicContext from 'components/IsPublicContext'
 import { getFolderLink } from 'lib/utils'
 import PropTypes from 'prop-types'
 import React, { useContext } from 'react'
 
 import { deconstructCozyWebLinkWithSlug, models, useClient } from 'cozy-client'
-import Icon from 'cozy-ui/transpiled/react/Icon'
 import IconButton from 'cozy-ui/transpiled/react/IconButton'
-import PreviousIcon from 'cozy-ui/transpiled/react/Icons/Previous'
 import AppLinker from 'cozy-ui-plus/dist/AppLinker'
 
 /**
@@ -87,7 +86,7 @@ export default function BackFromEditing({ returnUrl, file, requestToLeave }) {
               href={href}
               onClick={createOnClick(requestToLeave, href, onClick)}
             >
-              <Icon icon={PreviousIcon} />
+              <Icon icon={Previous} />
             </IconButton>
           )
         }}
@@ -102,7 +101,7 @@ export default function BackFromEditing({ returnUrl, file, requestToLeave }) {
         href={href}
         onClick={createOnClick(requestToLeave, href)}
       >
-        <Icon icon={PreviousIcon} />
+        <Icon icon={Previous} />
       </IconButton>
     )
   }
