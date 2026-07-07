@@ -1,7 +1,7 @@
 import React from 'react'
 import { translate } from 'twake-i18n'
 
-import { Empty } from 'cozy-ui/transpiled/react'
+import Empty from 'cozy-ui/transpiled/react/Empty'
 
 const Unshared = translate()(({ t }) => (
   <Empty
