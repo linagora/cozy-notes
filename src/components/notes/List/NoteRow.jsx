@@ -1,6 +1,7 @@
 import { AppRoutes } from 'constants/routes'
 import { DocumentTypes } from 'constants/strings'
 
+import { Icon, FileTypeNote } from '@linagora/twake-icons'
 import styles from 'components/notes/List/list.styl'
 import { generateReturnUrlToNotesIndex, getDriveLink } from 'lib/utils'
 import React, { useState, useCallback, useMemo } from 'react'
@@ -17,9 +18,7 @@ import {
 } from 'cozy-sharing'
 import ActionsMenu from 'cozy-ui/transpiled/react/ActionsMenu'
 import { makeActions } from 'cozy-ui/transpiled/react/ActionsMenu/Actions'
-import Icon from 'cozy-ui/transpiled/react/Icon'
 import IconButton from 'cozy-ui/transpiled/react/IconButton'
-import FileTypeNoteIcon from 'cozy-ui/transpiled/react/Icons/FileTypeNote'
 import Typography from 'cozy-ui/transpiled/react/Typography'
 import { TableRow, TableCell } from 'cozy-ui/transpiled/react/deprecated/Table'
 import { useAlert } from 'cozy-ui/transpiled/react/providers/Alert'
@@ -116,7 +115,7 @@ const NoteRow = ({ note, f, t, client }) => {
           className={`${styles.tableCellName} u-flex u-flex-items-center u-fz-medium`}
         >
           <Icon
-            icon={FileTypeNoteIcon}
+            icon={FileTypeNote}
             size={32}
             className="u-mr-1 u-flex-shrink-0"
           />
@@ -185,7 +184,6 @@ const NoteRow = ({ note, f, t, client }) => {
           </span>
         </TableCell>
       </TableRow>
-
       {isMenuOpen && (
         <ActionsMenu
           open

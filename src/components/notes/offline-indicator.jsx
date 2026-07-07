@@ -1,10 +1,10 @@
+import { Icon } from '@linagora/twake-icons'
 import styles from 'components/notes/offline-indicator.styl'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { useI18n } from 'twake-i18n'
 
 import Grid from 'cozy-ui/transpiled/react/Grid'
-import Icon from 'cozy-ui/transpiled/react/Icon'
 import Tooltip from 'cozy-ui/transpiled/react/Tooltip'
 import Chip from 'cozy-ui/transpiled/react/deprecated/Chip'
 import useBreakpoints from 'cozy-ui/transpiled/react/providers/Breakpoints'

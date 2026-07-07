@@ -1,5 +1,6 @@
 import { SHARING_LOCATION } from 'constants/strings'
 
+import { Icon } from '@linagora/twake-icons'
 import PublicToolbarMoreMenu from 'components/notes/PublicToolbarMoreMenu'
 import SharingWidget from 'components/notes/sharing'
 import { usePreview } from 'hooks/usePreview'
@@ -14,7 +15,6 @@ import {
   OpenSharingLinkButton
 } from 'cozy-sharing'
 import { makeActions } from 'cozy-ui/transpiled/react/ActionsMenu/Actions'
-import Icon from 'cozy-ui/transpiled/react/Icon'
 import Tooltip from 'cozy-ui/transpiled/react/Tooltip'
 import useBreakpoints from 'cozy-ui/transpiled/react/providers/Breakpoints'
 

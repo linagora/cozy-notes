@@ -1,12 +1,10 @@
+import { Icon, Forbidden, Restore } from '@linagora/twake-icons'
 import React, { useState } from 'react'
 import { useI18n } from 'twake-i18n'
 
 import { useClient } from 'cozy-client'
 import Button from 'cozy-ui/transpiled/react/Buttons'
 import { ConfirmDialog } from 'cozy-ui/transpiled/react/CozyDialogs'
-import Icon from 'cozy-ui/transpiled/react/Icon'
-import ForbiddenIcon from 'cozy-ui/transpiled/react/Icons/Forbidden'
-import RestoreIcon from 'cozy-ui/transpiled/react/Icons/Restore'
 import List from 'cozy-ui/transpiled/react/List'
 import ListItem from 'cozy-ui/transpiled/react/ListItem'
 import ListItemIcon from 'cozy-ui/transpiled/react/ListItemIcon'
@@ -40,13 +38,13 @@ const DestroyConfirm = ({ noteId, onCancel, onConfirm }) => {
         <List>
           <ListItem gutters="disabled" size="small">
             <ListItemIcon>
-              <Icon icon={ForbiddenIcon} />
+              <Icon icon={Forbidden} />
             </ListItemIcon>
             <ListItemText primary={t(`DestroyConfirm.forbidden`)} />
           </ListItem>
           <ListItem gutters="disabled" size="small">
             <ListItemIcon>
-              <Icon icon={RestoreIcon} />
+              <Icon icon={Restore} />
             </ListItemIcon>
             <ListItemText primary={t(`DestroyConfirm.restore`)} />
           </ListItem>
