@@ -50,14 +50,14 @@ describe('EditorCorner', () => {
       <div>
         <div>
           <svg
-            class="u-ml-half styles__icon___23x3R"
+            class="twake-icon u-ml-half"
             height="16"
             style="fill: var(--primaryTextColor);"
             title="This note is in read-only mode."
             width="16"
           >
             <use
-              xlink:href="#lock"
+              href="#lock"
             />
           </svg>
         </div>
