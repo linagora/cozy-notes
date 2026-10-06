@@ -1,17 +1,18 @@
 import { en, fr, ru, es, de, it } from '@atlaskit/editor-core/i18n'
+// The Atlaskit i18n index does not export `vi`, its bundle is imported directly
+import vi from '@atlaskit/editor-core/i18n/vi'
 
 export const DEFAULT_LOCALE = 'en'
 
 export const supportedLocales = ['en', 'fr', 'ru', 'vi', 'es', 'de', 'it']
 
-// The Atlaskit i18n index does not export `vi`: Vietnamese falls back to
-// the English editor messages (see getAtlaskitMessages)
-const atlaskitBundles = { en, fr, ru, es, de, it }
+const atlaskitBundles = { en, fr, ru, vi, es, de, it }
 
 // Strings the Atlaskit editor bundle lacks (or words differently from
 // what Twake Notes needs) for some languages
 const atlaskitSupplements = {
   fr: require('locales/atlassian_missing_french.json'),
+  vi: require('locales/atlassian_missing_vietnamese.json'),
   es: require('locales/atlassian_missing_spanish.json'),
   de: require('locales/atlassian_missing_german.json'),
   it: require('locales/atlassian_missing_italian.json')

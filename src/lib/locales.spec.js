@@ -11,9 +11,12 @@ jest.mock('@atlaskit/editor-core/i18n', () => ({
   en: { 'fabric.editor.bold': 'Bold', 'fabric.editor.italic': 'Italic' },
   fr: { 'fabric.editor.bold': 'Gras' },
   ru: { 'fabric.editor.bold': 'Полужирный' },
-  vi: { 'fabric.editor.bold': 'In đậm' },
   de: { 'fabric.editor.bold': 'Fett' },
   it: { 'fabric.editor.bold': 'Grassetto' }
+}))
+jest.mock('@atlaskit/editor-core/i18n/vi', () => ({
+  __esModule: true,
+  default: { 'fabric.editor.bold': 'In đậm' }
 }))
 
 describe('getAppLocale', () => {
@@ -44,6 +47,12 @@ describe('getAtlaskitMessages', () => {
     expect(getAtlaskitMessages('fr')['fabric.editor.linkPlaceholder']).toEqual(
       'Coller le lien'
     )
+  })
+
+  it('loads the Vietnamese bundle the Atlaskit i18n index does not export', () => {
+    const messages = getAtlaskitMessages('vi')
+    expect(messages['fabric.editor.bold']).toEqual('In đậm')
+    expect(messages['fabric.editor.linkPlaceholder']).toEqual('Dán liên kết')
   })
 
   it('falls back to English for a locale the Atlaskit bundle lacks', () => {

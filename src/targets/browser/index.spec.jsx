@@ -13,6 +13,11 @@ jest.mock('@atlaskit/editor-core/i18n', () => ({
   en: {}
 }))
 
+jest.mock('@atlaskit/editor-core/i18n/vi', () => ({
+  __esModule: true,
+  default: {}
+}))
+
 describe('app init', () => {
   it('loads with the users locale', () => {
     getDataset.mockReturnValue({ locale: 'fr', app: {} })

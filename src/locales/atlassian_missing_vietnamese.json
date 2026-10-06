@@ -1,0 +1,15 @@
+{
+  "fabric.editor.editMode.inviteToEditButton.title": "Mời chỉnh sửa",
+  "fabric.editor.blockquote2": "Trích dẫn",
+  "fabric.editor.remove": "Xóa",
+  "fabric.editor.linkPlaceholder": "Dán liên kết",
+  "fabric.editor.linkAddress": "Địa chỉ liên kết",
+  "fabric.editor.layoutWide": "Mở rộng",
+  "fabric.editor.layoutFullWidth": "Toàn chiều rộng",
+  "fabric.editor.layoutFixedWidth": "Quay về giữa",
+  "fabric.editor.alignImageLeft": "Căn ảnh sang trái",
+  "fabric.editor.alignImageCenter": "Căn giữa ảnh",
+  "fabric.editor.alignImageRight": "Căn ảnh sang phải",
+  "fabric.editor.numberedColumn": "Dòng được đánh số",
+  "fabric.editor.taskPlaceholder": "Nhập thao tác của bạn"
+}
