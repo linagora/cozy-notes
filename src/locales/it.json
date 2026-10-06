@@ -94,7 +94,7 @@
     "unshared_text": "Il proprietario potrebbe aver revocato questa condivisione. Non puoi più modificare una nota a questo indirizzo.",
     "loading_error_title": "Impossibile caricare la nota",
     "loading_error_text_noReturnUrl": "La nota potrebbe non esistere più oppure i nostri server potrebbero avere un problema temporaneo. Riprova più tardi.",
-    "back": "indietro",
+    "back": "Indietro",
     "422": "Sono accettate solo immagini",
     "unknown_error": "Si è verificato un errore imprevisto",
     "only_one_image": "Non puoi trascinare più immagini contemporaneamente"

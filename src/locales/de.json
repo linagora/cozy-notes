@@ -94,7 +94,7 @@
     "unshared_text": "Der Eigentümer hat diese Freigabe möglicherweise widerrufen. Sie können unter dieser Adresse keine Notiz mehr bearbeiten.",
     "loading_error_title": "Die Notiz konnte nicht geladen werden",
     "loading_error_text_noReturnUrl": "Die Notiz existiert möglicherweise nicht mehr, oder unsere Server haben eine vorübergehende Störung. Bitte versuchen Sie es später erneut.",
-    "back": "zurück",
+    "back": "Zurück",
     "422": "Es werden nur Bilder akzeptiert",
     "unknown_error": "Ein unerwarteter Fehler ist aufgetreten",
     "only_one_image": "Sie können nicht mehrere Bilder gleichzeitig per Drag-and-drop einfügen"

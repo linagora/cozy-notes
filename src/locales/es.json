@@ -94,7 +94,7 @@
     "unshared_text": "Es posible que el propietario haya revocado este uso compartido. Ya no puede editar una nota en esta dirección.",
     "loading_error_title": "No se ha podido cargar la nota",
     "loading_error_text_noReturnUrl": "Puede que la nota ya no exista o que nuestros servidores tengan un problema temporal. Inténtelo de nuevo más tarde.",
-    "back": "volver",
+    "back": "Volver",
     "422": "Solo se aceptan imágenes",
     "unknown_error": "Se ha producido un error inesperado",
     "only_one_image": "No puede arrastrar y soltar varias imágenes a la vez"
