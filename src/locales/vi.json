@@ -94,14 +94,14 @@
     "unshared_text": "Chủ sở hữu có thể đã thu hồi chia sẻ này. Bạn không thể chỉnh sửa ghi chú tại địa chỉ này nữa.",
     "loading_error_title": "Không thể tải ghi chú",
     "loading_error_text_noReturnUrl": "Ghi chú có thể không còn tồn tại, hoặc máy chủ của chúng tôi có thể gặp sự cố tạm thời. Vui lòng thử lại sau.",
-    "back": "quay lại",
+    "back": "Quay lại",
     "422": "Chỉ chấp nhận hình ảnh",
     "unknown_error": "Đã xảy ra lỗi không mong đợi",
     "only_one_image": "Bạn không thể kéo và thả nhiều hình ảnh cùng một lúc"
   },
   "manifest": {
     "short_description": "Twake Notes là ứng dụng ghi chú cá nhân và cộng tác của bạn.",
-    "long_description": "Notes là trình soạn thảo văn bản trực tuyến có thể cung cấp cho bạn:\n\n* Tạo ghi chú của riêng bạn với các tính năng thiết yếu (in đậm, gạch chân, liên kết, bảng...)\n* Điền và tìm ghi chú của bạn với các tài liệu khác trong các tệp của Drive cá nhân\n* Chỉnh sửa ghi chú dễ dàng từ tất cả các thiết bị của bạn\n* Truy cập ghi chú khi ngoại tuyến\n* Dành cho người hâm mộ, sử dụng phím tắt và nhập theo định dạng markdown ... và thậm chí viết cùng với người khác trên cùng một ghi chú (sắp ra mắt)!",
+    "long_description": "Notes là trình soạn thảo văn bản trực tuyến có thể cung cấp cho bạn:\n\n* Tạo ghi chú của riêng bạn với các tính năng thiết yếu (in đậm, gạch chân, liên kết, bảng...)\n* Sắp xếp và tìm ghi chú của bạn cùng với các tài liệu khác trong các thư mục của Drive cá nhân\n* Chỉnh sửa ghi chú dễ dàng từ tất cả các thiết bị của bạn\n* Truy cập ghi chú khi ngoại tuyến\n* Dành cho người hâm mộ, sử dụng phím tắt và nhập theo định dạng markdown ... và thậm chí viết cùng với người khác trên cùng một ghi chú (sắp ra mắt)!",
     "screenshots": [
       "screenshots/en/screenshot01.png",
       "screenshots/en/screenshot02.png"
