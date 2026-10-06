@@ -1,0 +1,15 @@
+{
+  "fabric.editor.editMode.inviteToEditButton.title": "Zum Bearbeiten einladen",
+  "fabric.editor.blockquote2": "Zitat",
+  "fabric.editor.remove": "Entfernen",
+  "fabric.editor.linkPlaceholder": "Link einfügen",
+  "fabric.editor.linkAddress": "Linkadresse",
+  "fabric.editor.layoutWide": "Verbreitern",
+  "fabric.editor.layoutFullWidth": "Volle Breite",
+  "fabric.editor.layoutFixedWidth": "Zurück zur Mitte",
+  "fabric.editor.alignImageLeft": "Bild links ausrichten",
+  "fabric.editor.alignImageCenter": "Bild zentrieren",
+  "fabric.editor.alignImageRight": "Bild rechts ausrichten",
+  "fabric.editor.numberedColumn": "Nummerierte Zeilen",
+  "fabric.editor.taskPlaceholder": "Geben Sie Ihre Aufgabe ein"
+}

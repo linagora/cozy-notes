@@ -1,0 +1,15 @@
+{
+  "fabric.editor.editMode.inviteToEditButton.title": "Invita a modificare",
+  "fabric.editor.blockquote2": "Citazione",
+  "fabric.editor.remove": "Rimuovi",
+  "fabric.editor.linkPlaceholder": "Incolla il link",
+  "fabric.editor.linkAddress": "Indirizzo del link",
+  "fabric.editor.layoutWide": "Allarga",
+  "fabric.editor.layoutFullWidth": "Larghezza intera",
+  "fabric.editor.layoutFixedWidth": "Torna al centro",
+  "fabric.editor.alignImageLeft": "Allinea l'immagine a sinistra",
+  "fabric.editor.alignImageCenter": "Centra l'immagine",
+  "fabric.editor.alignImageRight": "Allinea l'immagine a destra",
+  "fabric.editor.numberedColumn": "Righe numerate",
+  "fabric.editor.taskPlaceholder": "Scrivi la tua attività"
+}

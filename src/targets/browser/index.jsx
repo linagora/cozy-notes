@@ -3,7 +3,6 @@ import 'cozy-ui/dist/cozy-ui.utils.min.css'
 import 'cozy-ui/transpiled/react/stylesheet.css'
 import 'cozy-ui-plus/dist/stylesheet.css'
 
-import { fr, en, ru, vi } from '@atlaskit/editor-core/i18n'
 import { CaptureConsole } from '@sentry/integrations'
 import * as Sentry from '@sentry/react'
 import IsPublicContext from 'components/IsPublicContext'
@@ -12,6 +11,11 @@ import {
   getDataOrDefault,
   getPublicSharecode
 } from 'lib/initFromDom'
+import {
+  getAppLocale,
+  getAtlaskitMessages,
+  getReactIntlLocaleData
+} from 'lib/locales'
 import memoize from 'lodash/memoize'
 import React from 'react'
 import ReactDOM, { render } from 'react-dom'
@@ -43,27 +47,6 @@ import { SHARING_LOCATION } from '../../constants/strings'
 
 const manifest = require('../../../manifest.webapp')
 
-const frenchAtlaskitCozy = require(`locales/atlassian_missing_french.json`)
-
-const locales = {
-  en: {
-    react: require('react-intl/locale-data/en'),
-    atlaskit: en
-  },
-  fr: {
-    react: require('react-intl/locale-data/fr'),
-    atlaskit: { ...fr, ...frenchAtlaskitCozy }
-  },
-  ru: {
-    react: require('react-intl/locale-data/ru'),
-    atlaskit: ru
-  },
-  vi: {
-    react: require('react-intl/locale-data/vi'),
-    atlaskit: vi
-  }
-}
-
 /*
 With MUI V4, it is possible to generate deterministic class names.
 In the case of multiple react roots, it is necessary to disable this
@@ -87,7 +70,7 @@ const renderApp = function (appLocale, client, isPublic) {
         <StylesProvider generateClassName={generateClassName}>
           <IntlProvider
             locale={appLocale}
-            messages={locales[appLocale].atlaskit}
+            messages={getAtlaskitMessages(appLocale)}
           >
             <CozyProvider client={client}>
               <CozyTheme ignoreCozySettings={isPublic}>
@@ -119,15 +102,10 @@ export const initApp = () => {
   const appSlug = getDataOrDefault(data.app.slug, manifest.slug)
   const appVersion = getDataOrDefault(data.app.version, manifest.version)
 
-  const supportedLocales = ['en', 'fr', 'ru', 'vi']
-
-  addLocaleData(locales.en.react)
-  addLocaleData(locales.fr.react)
-  addLocaleData(locales.ru.react)
-  addLocaleData(locales.vi.react)
+  getReactIntlLocaleData().forEach(localeData => addLocaleData(localeData))
 
   const userLocale = getDataOrDefault(data.locale, 'en')
-  const appLocale = supportedLocales.includes(userLocale) ? userLocale : 'en'
+  const appLocale = getAppLocale(userLocale)
 
   const protocol = window.location ? window.location.protocol : 'https:'
 
