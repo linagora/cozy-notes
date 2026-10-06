@@ -1,0 +1,132 @@
+{
+  "Notes": {
+    "Add": {
+      "add_note": "Notiz hinzufügen"
+    },
+    "Delete": {
+      "delete_note": "Löschen",
+      "deleted": "Die Notiz wurde in den Papierkorb Ihres Drive verschoben",
+      "failed": "Die Notiz konnte nicht gelöscht werden. Bitte versuchen Sie es erneut"
+    },
+    "EditorView": {
+      "main_placeholder": "Schreiben Sie etwas…"
+    },
+    "Editor": {
+      "title_placeholder": "Titel eingeben",
+      "exit_confirmation_message": "Die automatische Speicherung hat die letzten Änderungen an Ihrem Dokument noch nicht berücksichtigt. Bleiben Sie bitte auf der aktuellen Notiz, wenn Sie sie behalten möchten.",
+      "exit_confirmation_title": "Änderungen verwerfen?",
+      "exit_confirmation_leave": "Ohne Speichern verlassen",
+      "exit_confirmation_cancel": "Abbrechen",
+      "read_only": "Diese Notiz ist schreibgeschützt."
+    },
+    "Files": {
+      "share": {
+        "cta": "Teilen"
+      }
+    },
+    "List": {
+      "latest_notes": "Neueste Notizen",
+      "name": "Name",
+      "updated_at": "Aktualisiert am",
+      "location": "Speicherort",
+      "sharings": "Freigaben",
+      "at": "%{date} um %{time}"
+    },
+    "Empty": {
+      "welcome": "Willkommen bei Twake Notes",
+      "after_created": "Sobald Ihre Notiz erstellt ist, finden Sie sie in Ihrem"
+    },
+    "SavingIndicator": {
+      "saved": {
+        "default": "Aktuell",
+        "just_now": "Aktuell",
+        "secs_ago": "Aktuell (vor %{time} Sek. gespeichert)",
+        "min_ago": "Aktuell (vor %{time} Min. gespeichert)",
+        "mins_ago": "Aktuell (vor %{time} Min. gespeichert)",
+        "hour_ago": "Aktuell (vor %{time} Stunde gespeichert)",
+        "hours_ago": "Aktuell (vor %{time} Stunden gespeichert)",
+        "day_ago": "Aktuell (vor %{time} Tag gespeichert)",
+        "days_ago": "Aktuell (vor %{time} Tagen gespeichert)",
+        "month_ago": "Aktuell (vor %{time} Monat gespeichert)",
+        "monthes_ago": "Aktuell (vor %{time} Monaten gespeichert)",
+        "year_ago": "Aktuell (vor %{time} Jahr gespeichert)",
+        "years_ago": "Aktuell (vor %{time} Jahren gespeichert)"
+      },
+      "saving": "Wird gespeichert...",
+      "still_saving": "Wird gespeichert......",
+      "out_of_sync": {
+        "default": "Gespeichert (offline)",
+        "just_now": "Gespeichert (offline)",
+        "secs_ago": "Gespeichert (seit %{time} Sek. offline)",
+        "min_ago": "Gespeichert (seit %{time} Min. offline)",
+        "mins_ago": "Gespeichert (seit %{time} Min. offline)",
+        "hour_ago": "Gespeichert (seit %{time} Stunde offline)",
+        "hours_ago": "Gespeichert (seit %{time} Stunden offline)",
+        "day_ago": "Gespeichert (seit %{time} Tag offline)",
+        "days_ago": "Gespeichert (seit %{time} Tagen offline)",
+        "month_ago": "Gespeichert (seit %{time} Monat offline)",
+        "monthes_ago": "Gespeichert (seit %{time} Monaten offline)",
+        "year_ago": "Gespeichert (seit %{time} Jahr offline)",
+        "years_ago": "Gespeichert (seit %{time} Jahren offline)"
+      },
+      "saving_impossible": {
+        "default": "Änderungen nicht gespeichert (offline)",
+        "just_now": "Änderungen nicht gespeichert (offline)",
+        "secs_ago": "Änderungen nicht gespeichert (seit %{time} Sek. offline)",
+        "min_ago": "Änderungen nicht gespeichert (seit %{time} Min. offline)",
+        "mins_ago": "Änderungen nicht gespeichert (seit %{time} Min. offline)",
+        "hour_ago": "Änderungen nicht gespeichert (seit %{time} Stunde offline)",
+        "hours_ago": "Änderungen nicht gespeichert (seit %{time} Stunden offline)",
+        "day_ago": "Änderungen nicht gespeichert (seit %{time} Tag offline)",
+        "days_ago": "Änderungen nicht gespeichert (seit %{time} Tagen offline)",
+        "month_ago": "Änderungen nicht gespeichert (seit %{time} Monat offline)",
+        "monthes_ago": "Änderungen nicht gespeichert (seit %{time} Monaten offline)",
+        "year_ago": "Änderungen nicht gespeichert (seit %{time} Jahr offline)",
+        "years_ago": "Änderungen nicht gespeichert (seit %{time} Jahren offline)"
+      }
+    },
+    "OfflineIndicator": {
+      "message": "Sie sind nicht mehr mit dem Internet verbunden. Ihre Änderungen werden gespeichert, sobald Sie wieder verbunden sind."
+    }
+  },
+  "Error": {
+    "unshared_title": "Diese Freigabe ist nicht mehr aktiv",
+    "unshared_text": "Der Eigentümer hat diese Freigabe möglicherweise widerrufen. Sie können unter dieser Adresse keine Notiz mehr bearbeiten.",
+    "loading_error_title": "Die Notiz konnte nicht geladen werden",
+    "loading_error_text_noReturnUrl": "Die Notiz existiert möglicherweise nicht mehr, oder unsere Server haben eine vorübergehende Störung. Bitte versuchen Sie es später erneut.",
+    "back": "zurück",
+    "422": "Es werden nur Bilder akzeptiert",
+    "unknown_error": "Ein unerwarteter Fehler ist aufgetreten",
+    "only_one_image": "Sie können nicht mehrere Bilder gleichzeitig per Drag-and-drop einfügen"
+  },
+  "manifest": {
+    "short_description": "Twake Notes ist Ihre App für persönliche und gemeinsame Notizen.",
+    "long_description": "Notes ist ein Online-Texteditor, mit dem Sie bereits:\n\n* Eigene Notizen mit den wichtigsten Funktionen erstellen (fett, unterstrichen, Links, Tabellen...)\n* Ihre Notizen zusammen mit Ihren anderen Dokumenten in den Ordnern Ihres persönlichen Drive ablegen und wiederfinden\n* Ihre Notizen ganz einfach auf all Ihren Geräten bearbeiten\n* Offline auf Ihre Notizen zugreifen\n* Für Fans: Tastenkürzel und Markdown-Eingabe nutzen ... und sogar gemeinsam mit Kontakten an derselben Notiz schreiben (demnächst)!",
+    "screenshots": [
+      "screenshots/en/screenshot01.png",
+      "screenshots/en/screenshot02.png"
+    ]
+  },
+  "Intents": {
+    "save": "Speichern"
+  },
+  "TrashedBanner": {
+    "text": "Das Element wurde in den Papierkorb verschoben",
+    "redirect": "Papierkorb öffnen",
+    "restore": "Wiederherstellen",
+    "restoreSuccess": "Das Element wurde wiederhergestellt",
+    "restoreError": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "destroy": "Endgültig löschen"
+  },
+  "DestroyConfirm": {
+    "title": "Endgültig löschen?",
+    "forbidden": "Sie können nicht mehr auf diese Datei zugreifen.",
+    "restore": "Sie können diese Datei nicht wiederherstellen, wenn Sie keine Sicherung erstellt haben.",
+    "cancel": "Abbrechen",
+    "delete": "Endgültig löschen",
+    "deleteError": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+  },
+  "MoreButton": {
+    "more": "Mehr"
+  }
+}
