@@ -12,6 +12,7 @@ const atlaskitBundles = { en, fr, ru, vi, es, de, it }
 // what Twake Notes needs) for some languages
 const atlaskitSupplements = {
   fr: require('locales/atlassian_missing_french.json'),
+  ru: require('locales/atlassian_missing_russian.json'),
   vi: require('locales/atlassian_missing_vietnamese.json'),
   es: require('locales/atlassian_missing_spanish.json'),
   de: require('locales/atlassian_missing_german.json'),

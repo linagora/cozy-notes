@@ -1,0 +1,15 @@
+{
+  "fabric.editor.editMode.inviteToEditButton.title": "Пригласить к редактированию",
+  "fabric.editor.blockquote2": "Цитата",
+  "fabric.editor.remove": "Удалить",
+  "fabric.editor.linkPlaceholder": "Вставьте ссылку",
+  "fabric.editor.linkAddress": "Адрес ссылки",
+  "fabric.editor.layoutWide": "Расширить",
+  "fabric.editor.layoutFullWidth": "Во всю ширину",
+  "fabric.editor.layoutFixedWidth": "Вернуть по центру",
+  "fabric.editor.alignImageLeft": "Выровнять изображение по левому краю",
+  "fabric.editor.alignImageCenter": "Выровнять изображение по центру",
+  "fabric.editor.alignImageRight": "Выровнять изображение по правому краю",
+  "fabric.editor.numberedColumn": "Нумерованные строки",
+  "fabric.editor.taskPlaceholder": "Введите задачу"
+}
