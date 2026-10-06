@@ -1,0 +1,132 @@
+{
+  "Notes": {
+    "Add": {
+      "add_note": "Añadir una nota"
+    },
+    "Delete": {
+      "delete_note": "Eliminar",
+      "deleted": "La nota se ha movido a la papelera de su Drive",
+      "failed": "No se ha podido eliminar la nota. Inténtelo de nuevo"
+    },
+    "EditorView": {
+      "main_placeholder": "Escriba lo que quiera…"
+    },
+    "Editor": {
+      "title_placeholder": "Escriba el título",
+      "exit_confirmation_message": "El guardado automático no ha tenido en cuenta los últimos cambios de su documento. Permanezca en la nota actual si desea conservarlos.",
+      "exit_confirmation_title": "¿Descartar los cambios?",
+      "exit_confirmation_leave": "Salir sin guardar",
+      "exit_confirmation_cancel": "Cancelar",
+      "read_only": "Esta nota está en modo de solo lectura."
+    },
+    "Files": {
+      "share": {
+        "cta": "Compartir"
+      }
+    },
+    "List": {
+      "latest_notes": "Notas recientes",
+      "name": "Nombre",
+      "updated_at": "Actualizado el",
+      "location": "Ubicación",
+      "sharings": "Uso compartido",
+      "at": "%{date} a las %{time}"
+    },
+    "Empty": {
+      "welcome": "Bienvenido a Twake Notes",
+      "after_created": "Una vez creada la nota, podrá encontrarla en su"
+    },
+    "SavingIndicator": {
+      "saved": {
+        "default": "Actualizado",
+        "just_now": "Actualizado",
+        "secs_ago": "Actualizado (guardado hace %{time} s)",
+        "min_ago": "Actualizado (guardado hace %{time} min)",
+        "mins_ago": "Actualizado (guardado hace %{time} min)",
+        "hour_ago": "Actualizado (guardado hace %{time} hora)",
+        "hours_ago": "Actualizado (guardado hace %{time} horas)",
+        "day_ago": "Actualizado (guardado hace %{time} día)",
+        "days_ago": "Actualizado (guardado hace %{time} días)",
+        "month_ago": "Actualizado (guardado hace %{time} mes)",
+        "monthes_ago": "Actualizado (guardado hace %{time} meses)",
+        "year_ago": "Actualizado (guardado hace %{time} año)",
+        "years_ago": "Actualizado (guardado hace %{time} años)"
+      },
+      "saving": "Guardando...",
+      "still_saving": "Guardando......",
+      "out_of_sync": {
+        "default": "Guardado (sin conexión)",
+        "just_now": "Guardado (sin conexión)",
+        "secs_ago": "Guardado (sin conexión desde hace %{time} s)",
+        "min_ago": "Guardado (sin conexión desde hace %{time} min)",
+        "mins_ago": "Guardado (sin conexión desde hace %{time} min)",
+        "hour_ago": "Guardado (sin conexión desde hace %{time} hora)",
+        "hours_ago": "Guardado (sin conexión desde hace %{time} horas)",
+        "day_ago": "Guardado (sin conexión desde hace %{time} día)",
+        "days_ago": "Guardado (sin conexión desde hace %{time} días)",
+        "month_ago": "Guardado (sin conexión desde hace %{time} mes)",
+        "monthes_ago": "Guardado (sin conexión desde hace %{time} meses)",
+        "year_ago": "Guardado (sin conexión desde hace %{time} año)",
+        "years_ago": "Guardado (sin conexión desde hace %{time} años)"
+      },
+      "saving_impossible": {
+        "default": "Cambios sin guardar (sin conexión)",
+        "just_now": "Cambios sin guardar (sin conexión)",
+        "secs_ago": "Cambios sin guardar (sin conexión desde hace %{time} s)",
+        "min_ago": "Cambios sin guardar (sin conexión desde hace %{time} min)",
+        "mins_ago": "Cambios sin guardar (sin conexión desde hace %{time} min)",
+        "hour_ago": "Cambios sin guardar (sin conexión desde hace %{time} hora)",
+        "hours_ago": "Cambios sin guardar (sin conexión desde hace %{time} horas)",
+        "day_ago": "Cambios sin guardar (sin conexión desde hace %{time} día)",
+        "days_ago": "Cambios sin guardar (sin conexión desde hace %{time} días)",
+        "month_ago": "Cambios sin guardar (sin conexión desde hace %{time} mes)",
+        "monthes_ago": "Cambios sin guardar (sin conexión desde hace %{time} meses)",
+        "year_ago": "Cambios sin guardar (sin conexión desde hace %{time} año)",
+        "years_ago": "Cambios sin guardar (sin conexión desde hace %{time} años)"
+      }
+    },
+    "OfflineIndicator": {
+      "message": "Ya no está conectado a internet. Sus cambios se guardarán cuando vuelva a conectarse."
+    }
+  },
+  "Error": {
+    "unshared_title": "Este uso compartido ya no está activo",
+    "unshared_text": "Es posible que el propietario haya revocado este uso compartido. Ya no puede editar una nota en esta dirección.",
+    "loading_error_title": "No se ha podido cargar la nota",
+    "loading_error_text_noReturnUrl": "Puede que la nota ya no exista o que nuestros servidores tengan un problema temporal. Inténtelo de nuevo más tarde.",
+    "back": "volver",
+    "422": "Solo se aceptan imágenes",
+    "unknown_error": "Se ha producido un error inesperado",
+    "only_one_image": "No puede arrastrar y soltar varias imágenes a la vez"
+  },
+  "manifest": {
+    "short_description": "Twake Notes es su aplicación de notas personal y colaborativa.",
+    "long_description": "Notes es un editor de texto en línea que ya le permite:\n\n* Crear sus propias notas con las funciones esenciales (negrita, subrayado, enlaces, tablas...)\n* Clasificar y encontrar sus notas junto con sus demás documentos en las carpetas de su Drive personal\n* Editar fácilmente sus notas desde todos sus dispositivos\n* Acceder a sus notas sin conexión\n* Para los más expertos, usar atajos y escribir en formato markdown... ¡e incluso escribir con sus contactos en la misma nota (próximamente)!",
+    "screenshots": [
+      "screenshots/en/screenshot01.png",
+      "screenshots/en/screenshot02.png"
+    ]
+  },
+  "Intents": {
+    "save": "Guardar"
+  },
+  "TrashedBanner": {
+    "text": "El elemento se ha movido a la papelera",
+    "redirect": "Abrir la papelera",
+    "restore": "Restaurar",
+    "restoreSuccess": "El elemento se ha restaurado",
+    "restoreError": "Se ha producido un error. Inténtelo de nuevo.",
+    "destroy": "Eliminar definitivamente"
+  },
+  "DestroyConfirm": {
+    "title": "¿Eliminar definitivamente?",
+    "forbidden": "Ya no podrá acceder a este archivo.",
+    "restore": "No podrá restaurar este archivo si no ha hecho una copia de seguridad.",
+    "cancel": "Cancelar",
+    "delete": "Eliminar definitivamente",
+    "deleteError": "Se ha producido un error. Inténtelo de nuevo."
+  },
+  "MoreButton": {
+    "more": "Más"
+  }
+}

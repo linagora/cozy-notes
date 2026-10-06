@@ -16,7 +16,7 @@
     "screenshots/fr/screenshot01.png",
     "screenshots/fr/screenshot02.png"
   ],
-  "langs": ["en", "fr"],
+  "langs": ["en", "fr", "es", "de", "it"],
   "routes": {
     "/": {
       "folder": "/",

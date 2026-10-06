@@ -1,0 +1,132 @@
+{
+  "Notes": {
+    "Add": {
+      "add_note": "Aggiungi una nota"
+    },
+    "Delete": {
+      "delete_note": "Elimina",
+      "deleted": "La nota è stata spostata nel cestino del tuo Drive",
+      "failed": "Impossibile eliminare la nota, riprova"
+    },
+    "EditorView": {
+      "main_placeholder": "Scrivi quello che vuoi…"
+    },
+    "Editor": {
+      "title_placeholder": "Scrivi il titolo",
+      "exit_confirmation_message": "Il salvataggio automatico non ha ancora registrato le ultime modifiche al documento. Rimani sulla nota attuale se vuoi conservarle.",
+      "exit_confirmation_title": "Abbandonare le modifiche?",
+      "exit_confirmation_leave": "Esci senza salvare",
+      "exit_confirmation_cancel": "Annulla",
+      "read_only": "Questa nota è in sola lettura."
+    },
+    "Files": {
+      "share": {
+        "cta": "Condividi"
+      }
+    },
+    "List": {
+      "latest_notes": "Note recenti",
+      "name": "Nome",
+      "updated_at": "Aggiornato il",
+      "location": "Posizione",
+      "sharings": "Condivisioni",
+      "at": "%{date} alle %{time}"
+    },
+    "Empty": {
+      "welcome": "Benvenuto in Twake Notes",
+      "after_created": "Una volta creata, potrai ritrovare la nota nel tuo"
+    },
+    "SavingIndicator": {
+      "saved": {
+        "default": "Aggiornato",
+        "just_now": "Aggiornato",
+        "secs_ago": "Aggiornato (salvato %{time} sec. fa)",
+        "min_ago": "Aggiornato (salvato %{time} min. fa)",
+        "mins_ago": "Aggiornato (salvato %{time} min. fa)",
+        "hour_ago": "Aggiornato (salvato %{time} ora fa)",
+        "hours_ago": "Aggiornato (salvato %{time} ore fa)",
+        "day_ago": "Aggiornato (salvato %{time} giorno fa)",
+        "days_ago": "Aggiornato (salvato %{time} giorni fa)",
+        "month_ago": "Aggiornato (salvato %{time} mese fa)",
+        "monthes_ago": "Aggiornato (salvato %{time} mesi fa)",
+        "year_ago": "Aggiornato (salvato %{time} anno fa)",
+        "years_ago": "Aggiornato (salvato %{time} anni fa)"
+      },
+      "saving": "Salvataggio in corso...",
+      "still_saving": "Salvataggio in corso......",
+      "out_of_sync": {
+        "default": "Salvato (offline)",
+        "just_now": "Salvato (offline)",
+        "secs_ago": "Salvato (offline da %{time} sec)",
+        "min_ago": "Salvato (offline da %{time} min)",
+        "mins_ago": "Salvato (offline da %{time} min)",
+        "hour_ago": "Salvato (offline da %{time} ora)",
+        "hours_ago": "Salvato (offline da %{time} ore)",
+        "day_ago": "Salvato (offline da %{time} giorno)",
+        "days_ago": "Salvato (offline da %{time} giorni)",
+        "month_ago": "Salvato (offline da %{time} mese)",
+        "monthes_ago": "Salvato (offline da %{time} mesi)",
+        "year_ago": "Salvato (offline da %{time} anno)",
+        "years_ago": "Salvato (offline da %{time} anni)"
+      },
+      "saving_impossible": {
+        "default": "Modifiche non salvate (offline)",
+        "just_now": "Modifiche non salvate (offline)",
+        "secs_ago": "Modifiche non salvate (offline da %{time} sec)",
+        "min_ago": "Modifiche non salvate (offline da %{time} min)",
+        "mins_ago": "Modifiche non salvate (offline da %{time} min)",
+        "hour_ago": "Modifiche non salvate (offline da %{time} ora)",
+        "hours_ago": "Modifiche non salvate (offline da %{time} ore)",
+        "day_ago": "Modifiche non salvate (offline da %{time} giorno)",
+        "days_ago": "Modifiche non salvate (offline da %{time} giorni)",
+        "month_ago": "Modifiche non salvate (offline da %{time} mese)",
+        "monthes_ago": "Modifiche non salvate (offline da %{time} mesi)",
+        "year_ago": "Modifiche non salvate (offline da %{time} anno)",
+        "years_ago": "Modifiche non salvate (offline da %{time} anni)"
+      }
+    },
+    "OfflineIndicator": {
+      "message": "Non sei più connesso a internet. Le tue modifiche verranno salvate quando ti riconnetterai."
+    }
+  },
+  "Error": {
+    "unshared_title": "Questa condivisione non è più attiva",
+    "unshared_text": "Il proprietario potrebbe aver revocato questa condivisione. Non puoi più modificare una nota a questo indirizzo.",
+    "loading_error_title": "Impossibile caricare la nota",
+    "loading_error_text_noReturnUrl": "La nota potrebbe non esistere più oppure i nostri server potrebbero avere un problema temporaneo. Riprova più tardi.",
+    "back": "indietro",
+    "422": "Sono accettate solo immagini",
+    "unknown_error": "Si è verificato un errore imprevisto",
+    "only_one_image": "Non puoi trascinare più immagini contemporaneamente"
+  },
+  "manifest": {
+    "short_description": "Twake Notes è la tua applicazione per prendere note personali e collaborative.",
+    "long_description": "Notes è un editor di testo online che ti permette già di:\n\n* Creare le tue note con le funzionalità essenziali (grassetto, sottolineato, link, tabelle...)\n* Archiviare e ritrovare le tue note insieme agli altri documenti nelle cartelle del tuo Drive personale\n* Modificare facilmente le tue note da tutti i tuoi dispositivi\n* Accedere alle tue note offline\n* Per gli appassionati, usare scorciatoie e scrivere in formato markdown... e persino scrivere insieme ai tuoi contatti sulla stessa nota (in arrivo)!",
+    "screenshots": [
+      "screenshots/en/screenshot01.png",
+      "screenshots/en/screenshot02.png"
+    ]
+  },
+  "Intents": {
+    "save": "Salva"
+  },
+  "TrashedBanner": {
+    "text": "L'elemento è stato spostato nel cestino",
+    "redirect": "Apri il cestino",
+    "restore": "Ripristina",
+    "restoreSuccess": "L'elemento è stato ripristinato",
+    "restoreError": "Si è verificato un errore, riprova.",
+    "destroy": "Elimina definitivamente"
+  },
+  "DestroyConfirm": {
+    "title": "Eliminare definitivamente?",
+    "forbidden": "Non potrai più accedere a questo file.",
+    "restore": "Non potrai ripristinare questo file se non ne hai fatto un backup.",
+    "cancel": "Annulla",
+    "delete": "Elimina definitivamente",
+    "deleteError": "Si è verificato un errore, riprova."
+  },
+  "MoreButton": {
+    "more": "Altro"
+  }
+}
