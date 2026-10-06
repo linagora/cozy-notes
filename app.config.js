@@ -51,6 +51,23 @@ const extraConfig = {
       '@atlaskit/media-viewer': path.resolve('./src/plugins/altaskit-unused'),
       '@atlaskit/user-picker': path.resolve('./src/plugins/altaskit-unused')
     }
+  },
+  module: {
+    rules: [
+      {
+        // cozy-ui pulls rooks and react-spring builds using syntax (`??`,
+        // `?.`) the webpack 4 parser of cozy-scripts does not support
+        test: /\.js$/,
+        include: /node_modules[\\/](rooks|@react-spring)[\\/]/,
+        // babel-loader is a dependency of cozy-scripts, not of the app
+        loader: require.resolve('babel-loader', {
+          paths: [path.dirname(require.resolve('cozy-scripts/package.json'))]
+        }),
+        options: {
+          presets: [['cozy-app', { react: false }]]
+        }
+      }
+    ]
   }
 }
 
