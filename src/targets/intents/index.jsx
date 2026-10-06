@@ -6,10 +6,14 @@ import 'cozy-bar/dist/stylesheet.css'
 import 'cozy-sharing/dist/stylesheet.css'
 import 'styles/index.css'
 
-import { fr, en, ru, vi } from '@atlaskit/editor-core/i18n'
 import IntentEditorView from 'components/intents/IntentEditorView'
 import IntentProvider from 'components/intents/IntentProvider'
 import { getDataset, getDataOrDefault } from 'lib/initFromDom'
+import {
+  getAppLocale,
+  getAtlaskitMessages,
+  getReactIntlLocaleData
+} from 'lib/locales'
 import React from 'react'
 import { render } from 'react-dom'
 import { IntlProvider, addLocaleData } from 'react-intl'
@@ -27,7 +31,6 @@ import {
 } from 'cozy-ui/transpiled/react/styles'
 
 const manifest = require('../../../manifest.webapp')
-const frenchAtlaskitCozy = require(`locales/atlassian_missing_french.json`)
 
 /*
 With MUI V4, it is possible to generate deterministic class names.
@@ -40,37 +43,14 @@ const generateClassName = createGenerateClassName({
   disableGlobal: true
 })
 
-const locales = {
-  en: {
-    react: require('react-intl/locale-data/en'),
-    atlaskit: en
-  },
-  fr: {
-    react: require('react-intl/locale-data/fr'),
-    atlaskit: { ...fr, ...frenchAtlaskitCozy }
-  },
-  ru: {
-    react: require('react-intl/locale-data/ru'),
-    atlaskit: ru
-  },
-  vi: {
-    react: require('react-intl/locale-data/vi'),
-    atlaskit: vi
-  }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   const data = getDataset()
   const token = data.token
   const appSlug = getDataOrDefault(data.app.slug, manifest.slug)
   const appVersion = getDataOrDefault(data.app.version, manifest.version)
-  addLocaleData(locales.en.react)
-  addLocaleData(locales.fr.react)
-  addLocaleData(locales.ru.react)
-  addLocaleData(locales.vi.react)
+  getReactIntlLocaleData().forEach(localeData => addLocaleData(localeData))
   const userLocale = getDataOrDefault(data.locale, 'en')
-  const supportedLocales = ['en', 'fr', 'ru', 'vi']
-  const appLocale = supportedLocales.includes(userLocale) ? userLocale : 'en'
+  const appLocale = getAppLocale(userLocale)
 
   const protocol = window.location.protocol
   const client = new CozyClient({
@@ -97,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <StylesProvider generateClassName={generateClassName}>
           <IntlProvider
             locale={appLocale}
-            messages={locales[appLocale].atlaskit}
+            messages={getAtlaskitMessages(appLocale)}
           >
             <BreakpointsProvider>
               <CozyProvider client={client}>
